@@ -54,3 +54,46 @@ if (numero == 1) {
 numero == 4 ? console.log("es igual a 4"): console.log(5);
 
 
+/* SWITCH */
+
+var country = "AS";
+
+switch (country) {
+    case "CO":
+            console.log('Colombia');
+        break;
+    case "AU":
+
+            console.log("Australia");
+        break;
+    case "AS":
+
+        console.log("Austria");
+    break;
+    default:
+        console.log("colombia");
+}
+
+/* for */
+
+var estudiante= ['Maria','Juan','Pedro'];
+
+function saludarEstudiante (estudiante){
+    console.log(`hola ${estudiante}`);
+}
+
+for (i=0;i<estudiante.length;i++){
+    saludarEstudiante(estudiante[i]);
+}
+
+/* for of */
+
+var countries=["colombia","Austria","Alemania"];
+
+function nombrarpaises(country){
+    console.log(`${country}`);
+}
+
+for (var country of countries) {
+    nombrarpaises(country);
+}
