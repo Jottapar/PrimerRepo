@@ -97,3 +97,84 @@ function nombrarpaises(country){
 for (var country of countries) {
     nombrarpaises(country);
 }
+
+
+/* while */
+
+var objetos= ['balon','mesa','silla'];
+
+function decircosas(palabra){
+    console.log(`Esto es ${cosa}`);
+}
+
+while (objetos.length > 0) {
+    var cosa=objetos.shift();
+    decircosas(cosa);
+
+}
+
+/* array */
+
+var cosaOficina = ['lapiz', 'computadora', 'borrador'];
+
+console.log(cosaOficina[1]);
+console.log(cosaOficina.push("cuaderno"));
+console.log(cosaOficina.pop());
+console.log(cosaOficina[3]);
+console.log(cosaOficina.unshift('primera cosas'));
+console.log(cosaOficina.shift());
+console.log(cosaOficina[0]);
+
+
+console.log(cosaOficina.indexOf("computadora"));
+
+
+    /* array .filter() */
+
+    var articulos = [
+        {nombre: 'bici', costo: 3000 },
+        {nombre: 'tv', costo: 2500 },
+        {nombre: 'Libro', costo: 320 },
+    ];
+
+    var artifiltrados = articulos.filter(function (articulo){
+        return articulo.costo <= 500
+    });
+
+    console.log(artifiltrados);
+
+    /* array map() */
+
+    var nomarti = articulos.map(function(arti){
+        return arti.nombre
+    });
+
+    console.log(nomarti);
+
+    /* array find */
+
+    var encuarti = articulos.find(function (arti) {
+        return arti.nombre === 'bici'
+    });
+
+    console.log(encuarti);
+
+     /*  array some */
+
+     var artibaratos = articulos.some(function (arti) {
+        return arti.costo <= 2700;
+     });
+
+     console.log(artibaratos);
+
+
+    /* array for each  */
+
+    articulos.forEach(function (por){
+        console.log(por.nombre);
+    });
+
+   
+
+
+    
