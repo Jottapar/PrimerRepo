@@ -174,7 +174,30 @@ console.log(cosaOficina.indexOf("computadora"));
         console.log(por.nombre);
     });
 
-   
 
+/* objetos */
 
-    
+var  camisa= {
+    color: 'azul',
+    tela:'lino',
+    tipo: 'manga larga',
+    talla: 'xl',
+    detalleCamisa: function(){
+        console.log(`Camisa ${this.tipo}, de color ${this.color}`)
+    }
+    };
+
+console.log(camisa.color);
+console.log(camisa.detalleCamisa());
+
+/* funcion constructora */
+
+function auto(color, tela, talla){
+    this.color = color;
+    this.tela = tela;
+    this.talla = talla;
+};
+
+var camisanueva = new auto('verde','lina','l');
+
+console.log(camisanueva);
