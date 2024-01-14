@@ -77,7 +77,7 @@ console.log( a, b);
 
                  /* objects */
 
-let user = {username: 'johan', age: 36};
+let user2 = {username: 'johan', age: 36};
 let {username, age} = user;
 console.log(username, age);
 
@@ -138,3 +138,62 @@ const anotherfunction = () => {
 anotherfunction()
     .then(response => console.log(response))
     .catch(err => console.log(err));
+
+/* clases*/
+
+class presentacion {
+    constructor(name, apellido) {
+        this.name = name;
+        this.apellido = apellido;
+    }
+    saludar () {
+        return 'hello';
+    }
+    preguntar () {
+        return 'Como estas?';
+    }
+    greeting () {
+        return `${this.saludar()} ${this.name} ${this.preguntar()}`;
+    }
+    get lastname () {
+        return this.apellido;
+    }
+    set lastname (n) {
+        this.apellido = n;
+    }
+};
+
+
+const saCompleto = new presentacion('ana','Escobar');
+
+console.log(saCompleto.greeting());
+console.log(saCompleto.lastname);
+console.log(saCompleto.lastname = 'Pardo');
+
+
+
+class presentacion {
+    constructor (name, apellido) {
+        this.name = name;
+        this.apellido = apellido;
+    }
+    saludar () {
+        return 'Hola';
+    }
+    Preguntar () {
+        return 'Como estas?';
+    }
+    greeting () {
+        return `${this.saludar()} ${this.name} ${this.Preguntar()}`;
+    }
+    get verapellido () {
+        return this.apellido;
+    }
+    set cambiarApillido (nuevoapellido) {
+        this.nuevoapellido = 'Pardo';
+    }
+}
+
+const saludisimo = new presentacion('Johan','Pardo');
+
+console.log(saludisimo.greeting());
