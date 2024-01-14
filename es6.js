@@ -172,6 +172,36 @@ console.log(saCompleto.lastname = 'Pardo');
 
 /* modules */
 
-import saludo from "./paraimportar";
+import saludo from "./paraimportar.js";
 
 saludo();
+
+
+/* generator */
+
+
+function* cadaUno (array) {
+    for (let value of array) {
+        yield value;
+    }
+}
+
+const traer = cadaUno(['jhon', 'jaime','wilson','santiago']);
+
+
+console.log(traer.next().value);
+console.log(traer.next().value);
+console.log(traer.next().value);
+console.log(traer.next().value);
+console.log(traer.next().value);
+console.log(traer.next().value);
+
+
+/* set-add */
+
+const item = new Set();
+
+item.add('tomate');
+item.add('cebolla').add('cilantro');
+
+console.log(item);
