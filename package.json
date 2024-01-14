@@ -1,0 +1,11 @@
+{
+  "name": "programar",
+  "version": "1.0.0",
+  "description": "MI primer Repo",
+  "main": "es6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NachRusten <jpardo180@gmail.com>",
+  "license": "MIT"
+}

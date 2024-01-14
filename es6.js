@@ -170,30 +170,8 @@ console.log(saCompleto.greeting());
 console.log(saCompleto.lastname);
 console.log(saCompleto.lastname = 'Pardo');
 
+/* modules */
 
+import saludo from "./paraimportar";
 
-class presentacion {
-    constructor (name, apellido) {
-        this.name = name;
-        this.apellido = apellido;
-    }
-    saludar () {
-        return 'Hola';
-    }
-    Preguntar () {
-        return 'Como estas?';
-    }
-    greeting () {
-        return `${this.saludar()} ${this.name} ${this.Preguntar()}`;
-    }
-    get verapellido () {
-        return this.apellido;
-    }
-    set cambiarApillido (nuevoapellido) {
-        this.nuevoapellido = 'Pardo';
-    }
-}
-
-const saludisimo = new presentacion('Johan','Pardo');
-
-console.log(saludisimo.greeting());
+saludo();
