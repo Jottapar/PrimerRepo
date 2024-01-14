@@ -29,6 +29,7 @@ names();
 
 /* arrow function */
 var persona1='johan';
+var coso= "la cosa"
 
 function saludo(persona){
     return `hola ${persona1}`;
@@ -38,8 +39,11 @@ var greetting = (persona)=>{
     return `hola ${persona1}`;
 }
 
+var nuefun = cosa => `la cosa es ${coso}`;
+
 console.log(saludo());
 console.log(greetting());
+console.log(nuefun());
 
 /* default paraments */
 
@@ -118,3 +122,19 @@ function newUser(user, age, country, uId) {
 };
 
 console.log(newUser('johan',36,"Colombia",1));
+
+/*  promises */
+
+const anotherfunction = () => {
+    return new Promise((resolve,reject) => {
+        if (true) {
+            resolve ('Hey....');
+        } else {
+            reject ('whoooo...!!');
+        }
+    })
+}
+
+anotherfunction()
+    .then(response => console.log(response))
+    .catch(err => console.log(err));
