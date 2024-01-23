@@ -78,7 +78,7 @@ console.log( a, b);
                  /* objects */
 
 let user2 = {username: 'johan', age: 36};
-let {username, age} = user;
+let {username, age} = user2;
 console.log(username, age);
 
 

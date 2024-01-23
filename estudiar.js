@@ -1,29 +1,33 @@
+var paises = ['Israel','Colombia', 'Venezuela', 'Australia', 'Austria', 'Alemania'];
 
-var paises = ['Venezuela','Colombia','Austria', 'Alemania'];
+let paisesAdicionales =  ['New Zeland', 'Ireland'];
 
-var prendas = [
-    {tipo: 'Camisa', color: 'Blanco'},
-    {tipo: 'Franela', color: 'Gris'},
-    {tipo: 'Chemise', color: 'Azul'}
-];
+const living =`Quiero vivir en ${paises[3]}`;
 
-var Colombia = {
-    capital: 'Bogota',
-    moneda: 'Pesos',
-    comida: 'Bandeja paisa',
-    musica: 'Vallenato'
+
+
+
+// iterar con forEach
+let opcionesPaises = paises.forEach( (pais, index, originalArray) => {
+    
+    console.log(`${index+1} opcion es ${pais} --- forEach`);
+});
+
+
+
+//iterar con while
+
+let i = 0;
+
+while (i < paises.length) {
+    i++
+    console.log(`${i} opcion es ${paises[i-1]} --- while`);
 };
 
-const Austria = {
-    capital: 'Viena',
-    moneda: 'Euros',
-    comida: 'El buñuelo',
-    musica: 'Gaita'
-};
 
-function comida ({comida}) {
-    console.log(comida);
-};
+//iterar con for
 
-comida(Austria); 
+for ( let j = 1; j < paises.length; j++) {
+    console.log(`${j} opcion es ${paises[j-1]} --- for`);
+};
 

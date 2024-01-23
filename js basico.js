@@ -201,3 +201,6 @@ function auto(color, tela, talla){
 var camisanueva = new auto('verde','lina','l');
 
 console.log(camisanueva);
+
+
+
